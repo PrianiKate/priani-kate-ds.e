@@ -1,0 +1,23 @@
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin margin-top($key) {
+  @if map-has-key($spacing, $key) {
+    margin-top: map-get($spacing, $key);
+  }
+}
