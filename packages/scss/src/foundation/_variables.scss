@@ -48,12 +48,18 @@ $playfair: "Playfair", serif; /* 1 */
 $raleway: "Raleway", "HelveticaNeue", "Helvetica", "Arial", sans-serif; /* 2 */
 
 /* Font sizes */
-
-$fs-xs: 0.75rem; // 12px
-$fs-sm: 0.875rem; // 14px
-$fs-base: 1rem; // 16px
-$fs-lg: 1.125rem; // 18px
-$fs-xl: 1.5rem; // 24px
+$font-sizes: (
+  xs: 0.75rem,
+  // 12px
+  sm: 0.875rem,
+  // 14px
+  base: 1rem,
+  // 16px
+  lg: 1.125rem,
+  // 18px
+  xl: 1.5rem
+  // 24px
+);
 
 /* Heading font sizes */
 

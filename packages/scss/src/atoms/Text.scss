@@ -1,0 +1,7 @@
+@import "foundation/all";
+
+@each $fs, $fs-value in $font-sizes {
+  .dse-text-#{$fs} {
+    font-size: $fs-value;
+  }
+}

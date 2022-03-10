@@ -12,7 +12,7 @@
   --dse-form-error-border: #{$red};
   --dse-form-border-focus-color: #{$green};
 
-  --dse-body-font-size: #{$fs-sm};
+  --dse-body-font-size: #{map-get($font-sizes, 'sm')};
   --dse-body-font-weight: #{$fw-normal};
 
   --dse-h1-font-size: #{$h-1};

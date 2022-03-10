@@ -2,7 +2,7 @@
 =                Body font sizes              =
 =============================================*/
 
-$body-font-size: var(--dse-body-font-size, $fs-sm) !default;
+$body-font-size: var(--dse-body-font-size, map-get($font-sizes, 'sm')) !default;
 $body-font-weight: var(--dse-body-font-weight, $fw-normal) !default;
 
 /*=============================================
