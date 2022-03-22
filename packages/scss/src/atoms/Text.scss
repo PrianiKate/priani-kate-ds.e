@@ -1,5 +1,9 @@
 @import "foundation/all";
 
+.dse-text {
+  margin: 0;
+}
+
 @each $fs, $fs-value in $font-sizes {
   .dse-text-#{$fs} {
     font-size: $fs-value;
