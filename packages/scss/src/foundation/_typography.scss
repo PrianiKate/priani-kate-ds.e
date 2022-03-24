@@ -4,6 +4,7 @@
 
 $body-font-size: var(--dse-body-font-size, map-get($font-sizes, 'sm')) !default;
 $body-font-weight: var(--dse-body-font-weight, $fw-normal) !default;
+$body-font-family: var(--dse-body-font-family, $playfair) !default;
 
 /*=============================================
 =                Header font sizes            =
