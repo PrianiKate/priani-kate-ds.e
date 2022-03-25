@@ -22,10 +22,10 @@ const options = [
     label: 'Sweet Pink',
     value: 'pink'
   }
-]
+];
 
 ReactDOM.render(
-  <div>
+  <div style={{ padding: '40px' }}>
     <Select options={options} />
   </div>,
   document.querySelector('#root')

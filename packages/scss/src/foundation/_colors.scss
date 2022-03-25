@@ -23,3 +23,6 @@ $form-error-color: var(--dse-form-error-color, $red) !default;
 $form-error-border: var(--dse-form-error-border, $red) !default;
 $form-border-focus-color: var(--dse-form-border-focus-color, $green) !default;
 $form-border-color: var(--dse-form-border-color, $white-dark) !default;
+$form-bg-color-hover: var(--dse-form-bg-color-hover, $white-dark) !default;
+$form-bg-option-selected: var(--dse-form-bg-option-selected, $green) !default;
+$form-color-option-selected: var(--dse-form-color-option-selected, $white) !default;
