@@ -165,7 +165,6 @@ const Select: React.FunctionComponent<SelectProps> = ({
             isSelected,
             tabIndex: isHighlighted ? -1 : 0,
             'aria-checked': isSelected ? true : undefined,
-            role: 'menuitemradio',
             'aria-label': option.label,
             onKeyDown: onOptionKeyDown,
             onMouseEnter: () => highlightOption(optionIndex),
@@ -188,6 +187,7 @@ const Select: React.FunctionComponent<SelectProps> = ({
 
           return (
             <li
+              role="menuitemradio"
               {...renderOptionProps.getOptionRecommendedProps()}
             >
               <Text>
