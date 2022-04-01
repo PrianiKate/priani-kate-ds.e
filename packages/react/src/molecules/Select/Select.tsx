@@ -153,8 +153,13 @@ const Select: React.FunctionComponent<SelectProps> = ({
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      {isOpen && (
-        <ul role='menu' id='dse-select-list' style={{ top: overlayTop }} className='dse-select__overlay'>
+      {(
+        <ul
+          role='menu'
+          id='dse-select-list'
+          style={{ top: overlayTop }}
+          className={`dse-select__overlay ${isOpen ? 'dse-select__overlay--open' : ''}`}
+        >
         {options.map((option, optionIndex) => {
           const ref = optionRefs[optionIndex];
           const isSelected = selectedIndex === optionIndex;

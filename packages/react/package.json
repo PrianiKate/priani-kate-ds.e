@@ -7,10 +7,17 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@storybook/addon-a11y": "5.3.19",
+    "@storybook/addon-knobs": "5.3.19",
+    "@storybook/addon-storysource": "^6.4.20",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "5.3.19",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@types/jest": "^27.4.1",
     "@types/react": "^17.0.39",
+    "babel-loader": "^8.2.4",
+    "chromatic": "^6.5.3",
     "jest": "^27.5.1",
     "react": "^17.0.2",
     "rollup": "^2.69.1",
@@ -21,6 +28,9 @@
     "build": "rollup -c",
     "dev": "yarn build --watch",
     "test": "jest --verbose --env=jsdom",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "start-storybook": "start-storybook",
+    "build-storybook": "build-storybook",
+    "chromatic": "chromatic --project-token=823b8a33cd4d"
   }
 }
