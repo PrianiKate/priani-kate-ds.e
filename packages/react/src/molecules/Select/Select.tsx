@@ -20,7 +20,7 @@ interface RenderOptionProps {
   getOptionRecommendedProps: (overrideProps?: Object) => Object;
 }
 
-interface SelectProps {
+export interface SelectProps {
   onOptionSelected?: (option: SelectOption, optionIndex: number) => void;
   options?: SelectOption[];
   label?: string;
