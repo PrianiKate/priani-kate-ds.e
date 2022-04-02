@@ -22,11 +22,14 @@
     "babel-loader": "^8.2.4",
     "chromatic": "^6.5.3",
     "jest": "^27.5.1",
-    "react": "^17.0.2",
     "rollup": "^2.69.1",
     "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.5.5",
     "@priani-kate-ds.e/foundation": "^0.3.0"
+  },
+  "peerDependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   },
   "scripts": {
     "build": "rollup -c",
@@ -39,5 +42,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "resolutions": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }
