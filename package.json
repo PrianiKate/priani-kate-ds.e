@@ -1,13 +1,12 @@
 {
-  "name": "ds.e",
-  "version": "1.0.0",
+  "name": "priani-kate-ds.e",
+  "version": "1.0.2",
   "main": "index.js",
   "author": "Ekaterina Prianishnikova <ekaterina-gd@joincalibrate.com>",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^4.0.0"
   },
-  "private": true,
   "workspaces": {
     "packages": [
       "packages/*",
@@ -20,6 +19,7 @@
   "scripts": {
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
-    "test": "yarn lerna run test"
+    "test": "yarn lerna run test",
+    "publish": "yarn build && yarn lerna publish"
   }
 }
