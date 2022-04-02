@@ -1,6 +1,6 @@
 import React from 'react';
 import Select from './Select';
-import '@ds.e/scss/lib/Select.css';
+import '@priani-kate-ds.e/scss/lib/Select.css';
 
 import { withA11y } from '@storybook/addon-a11y';
 

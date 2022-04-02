@@ -6,6 +6,8 @@
   "author": "Ekaterina Prianishnikova <ekaterina-gd@joincalibrate.com>",
   "license": "MIT",
   "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "lerna": "^4.0.0"
   },
   "workspaces": {
@@ -22,5 +24,10 @@
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
     "publish": "yarn build && yarn lerna run publish"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }

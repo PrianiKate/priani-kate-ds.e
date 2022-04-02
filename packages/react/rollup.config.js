@@ -14,5 +14,5 @@ export default {
   },
   plugins: [Ts()],
   preserveModules: true,
-  external: ['react', '@ds.e/foundation']
+  external: ['react', '@priani-kate-ds.e/foundation']
 };

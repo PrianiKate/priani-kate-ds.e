@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Select } from '@ds.e/react';
+import { Select } from '@priani-kate-ds.e/react';
 
-import '@ds.e/scss/lib/Utilities.css';
-import '@ds.e/scss/lib/Text.css';
-import '@ds.e/scss/lib/Margin.css';
-import '@ds.e/scss/lib/global.css';
-import '@ds.e/scss/lib/Select.css';
+import '@priani-kate-ds.e/scss/lib/Utilities.css';
+import '@priani-kate-ds.e/scss/lib/Text.css';
+import '@priani-kate-ds.e/scss/lib/Margin.css';
+import '@priani-kate-ds.e/scss/lib/global.css';
+import '@priani-kate-ds.e/scss/lib/Select.css';
 
 const options = [
   {
