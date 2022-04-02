@@ -26,7 +26,7 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
-    "publish": "yarn build && yarn lerna run publish",
+    "publish": "yarn build && yarn lerna publish",
     "commit": "yarn git-cz"
   },
   "config": {
