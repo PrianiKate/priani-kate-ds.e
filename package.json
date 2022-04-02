@@ -1,7 +1,8 @@
 {
   "name": "priani-kate-ds.e",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
+  "private": "true",
   "author": "Ekaterina Prianishnikova <ekaterina-gd@joincalibrate.com>",
   "license": "MIT",
   "devDependencies": {
@@ -20,6 +21,6 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
-    "publish": "yarn build && yarn lerna publish"
+    "publish": "yarn build && yarn lerna run publish"
   }
 }
