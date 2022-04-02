@@ -1,9 +1,12 @@
 {
   "name": "@priani-kate-ds.e/scss",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "index.js",
   "license": "MIT",
-  "files": ["lib", "src"],
+  "files": [
+    "lib",
+    "src"
+  ],
   "dependencies": {
     "lint-staged": "^12.3.4",
     "normalize-scss": "^7.0.1"

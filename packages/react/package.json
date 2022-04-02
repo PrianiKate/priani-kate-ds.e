@@ -1,9 +1,11 @@
 {
   "name": "@priani-kate-ds.e/react",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "lib/index.js",
   "license": "MIT",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
