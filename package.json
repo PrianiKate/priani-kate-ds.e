@@ -6,8 +6,11 @@
   "author": "Ekaterina Prianishnikova <ekaterina-gd@joincalibrate.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "husky": "4.2.5",
     "lerna": "^4.0.0"
   },
   "workspaces": {
@@ -23,11 +26,17 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
-    "publish": "yarn build && yarn lerna run publish"
+    "publish": "yarn build && yarn lerna run publish",
+    "commit": "yarn git-cz"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
