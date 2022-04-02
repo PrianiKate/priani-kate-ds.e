@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "main": "index.js",
   "license": "MIT",
+  "files": ["lib", "src"],
   "dependencies": {
     "lint-staged": "^12.3.4",
     "normalize-scss": "^7.0.1"
