@@ -13,7 +13,7 @@ jobs:
         run: yarn build
       - name: Run tests
         run: yarn test
-      - uses: chromaui/action@v1
+      - uses: chromaui/action@v2
         with:
           workingDir: ./packages/react
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
