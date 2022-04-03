@@ -29,7 +29,7 @@
     "publish": "yarn build && yarn lerna publish",
     "commit": "yarn git-cz",
     "test:chromatic": "yarn lerna run test:chromatic",
-    "build-storybook": "yarn lerna run build-storybook"
+    "build:storybook": "yarn build && yarn lerna run build-storybook"
   },
   "config": {
     "commitizen": {
