@@ -101,32 +101,50 @@ const Select: React.FunctionComponent<SelectProps> = ({
   const onButtonKeyDown: KeyboardEventHandler = (event) => {
     event.preventDefault();
 
-    if ([KEY_CODES.ENTER, KEY_CODES.SPACE, KEY_CODES.DOWN_ARROW].includes(+event.code)) {
-      setIsOpen(true);
-
-      highlightOption(0);
-    }
-  }
-
-  const onOptionKeyDown: KeyboardEventHandler = (event) => {
-    if (+event.code === KEY_CODES.ESC) {
+    if (event.keyCode === KEY_CODES.ESC) {
       setIsOpen(false);
 
       return;
     }
 
-    if (+event.code === KEY_CODES.DOWN_ARROW) {
+    if ([KEY_CODES.ENTER, KEY_CODES.SPACE, KEY_CODES.DOWN_ARROW].includes(event.keyCode)) {
+      setIsOpen(true);
+      
+      highlightOption(0);
+    }
+
+    if (event.keyCode === KEY_CODES.DOWN_ARROW) {
       highlightOption(getNextOptionIndex(highlightedIndex, options));
     }
 
-    if (+event.code === KEY_CODES.UP_ARROW) {
+    if (event.keyCode === KEY_CODES.UP_ARROW) {
       highlightOption(getPreviousOptionIndex(highlightedIndex, options));
     }
 
-    if (+event.code === KEY_CODES.ENTER) {
+    if (event.keyCode === KEY_CODES.ENTER) {
       onOptionSelected(options[highlightedIndex!], highlightedIndex!);
     }
   }
+
+  // const onOptionKeyDown: KeyboardEventHandler = (event) => {
+  //   if (event.keyCode === KEY_CODES.ESC) {
+  //     setIsOpen(false);
+
+  //     return;
+  //   }
+
+  //   if (event.keyCode === KEY_CODES.DOWN_ARROW) {
+  //     highlightOption(getNextOptionIndex(highlightedIndex, options));
+  //   }
+
+  //   if (event.keyCode === KEY_CODES.UP_ARROW) {
+  //     highlightOption(getPreviousOptionIndex(highlightedIndex, options));
+  //   }
+
+  //   if (event.keyCode === KEY_CODES.ENTER) {
+  //     onOptionSelected(options[highlightedIndex!], highlightedIndex!);
+  //   }
+  // }
 
   return (
     <div className='dse-select'>
@@ -171,7 +189,7 @@ const Select: React.FunctionComponent<SelectProps> = ({
             tabIndex: isHighlighted ? -1 : 0,
             'aria-checked': isSelected ? true : undefined,
             'aria-label': option.label,
-            onKeyDown: onOptionKeyDown,
+            // onKeyDown: onOptionKeyDown,
             onMouseEnter: () => highlightOption(optionIndex),
             onMouseLeave: () => highlightOption(null),
             getOptionRecommendedProps: (overrideProps = {}) => ({
